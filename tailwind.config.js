@@ -12,7 +12,9 @@ export default {
         bg_primary: "#3F51B5",
         blue: "#303F9F",
         yellow: "#FFC107",
-        grey: "#455A64"
+        grey: "#455A64",
+        grey__light: "#F7F7F7",
+        red: "#8C0001"
       }
     },
   },
