@@ -31,3 +31,11 @@ input{
 .hover:hover{
     transform: scale(1.25);
 }
+
+.login{
+    display: none;
+}
+
+.user:hover .login{
+    display: inline-block;
+}

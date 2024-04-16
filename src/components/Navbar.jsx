@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IoIosNotifications, IoIosSearch } from "react-icons/io";
-import { FaUserCircle, FaHeart, FaShoppingCart } from "react-icons/fa";
-
+import { IoIosSearch } from "react-icons/io";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -32,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/* search bar */}
-        <div className="hidden sm:flex justify-between items-center search w-2/3 p-1 rounded-full border border-black">
+        <div className="hidden sm:flex justify-between items-center search w-2/3 p-1 rounded-full border border-black active:scale-y-105">
           <input
             type="text"
             placeholder="Search for anything"
@@ -48,7 +46,13 @@ const Navbar = () => {
           <img src="./images/heart.svg" className="hover" alt="heart" width={"27px"}/>
           <img src="./images/notification.svg" className="hover" alt="notification" width={"27px"}/>
           <img src="./images/cart.svg" className="hover" alt="cart" width={"27px"}/>
-          <img src="./images/user.svg" className="hover" alt="user" width={"27px"}/>
+          <div className="user flex justify-center items-center w-10 h-10 float-left transition-all duration-700 ease-in-out overflow-hidden rounded-full bg-green hover:w-60">
+            <div className="icon">
+            <img src="./images/user.svg" className="hover" alt="user" width={"27px"}/>
+
+            </div>
+            <span className="font-heading text-white text-xl login">Login</span>
+          </div>
         </div>
       </div>
     </>

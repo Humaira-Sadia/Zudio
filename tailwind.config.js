@@ -10,11 +10,12 @@ export default {
       }, 
       colors: {
         bg_primary: "#3F51B5",
-        blue: "#303F9F",
-        yellow: "#FFC107",
+        blue: "#0064D2",
+        yellow: "#F2B000",
+        green: "#86B816",
         grey: "#455A64",
         grey__light: "#F7F7F7",
-        red: "#8C0001"
+        red: "#E6303A"
       }
     },
   },
