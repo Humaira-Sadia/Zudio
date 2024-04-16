@@ -1,7 +1,7 @@
 {
   "homepage": "https://Humaira-Sadia.github.io/eCommerce",
   "name": "ecommerce",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
