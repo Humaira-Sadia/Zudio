@@ -16,7 +16,7 @@ export default {
         grey: "#455A64",
         grey__light: "#F7F7F7",
         red: "#E6303A"
-      }
+      },
     },
   },
   variants: {

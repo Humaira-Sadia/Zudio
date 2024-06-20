@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Humaira-Sadia.github.io/eCommerce",
+  "homepage": "https://Humaira-Sadia.github.io/Zudio",
   "name": "ecommerce",
   "private": false,
   "version": "0.0.0",
@@ -13,11 +13,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.105.4",
+    "@react-three/fiber": "^8.16.2",
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
