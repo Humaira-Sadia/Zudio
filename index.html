@@ -5,9 +5,24 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZUDIO</title>
+    <style>
+      .category-text {
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          transition: all 0.3s ease;
+          rotate: 180deg;
+      }
+
+      .category-1:hover .category-text {
+          transform: scale(1.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+  </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
