@@ -1,9 +1,9 @@
-#### 🚀 Welcome to the Frontend Hackathon: Building eBay Clone with Tailwind CSS and React! 🛒
+#### 🚀 Welcome to the Frontend Hackathon: Building ZUDIO Clone with Tailwind CSS and React! 🛒
 
-# **Project Name: eBay 🛍️**
+# **Project Name: ZUDIO 🛍️**
 
 **Description:**
-**_eBay_** is ticket to mastering React and Tailwind CSS while creating a stunning replica of eBay's frontend. Dive into the world of eCommerce with this immersive project. Harness the power of Tailwind's utility-first approach to design and React's component-based architecture to craft a seamless user experience.
+**_ZUDIO_** is ticket to mastering React and Tailwind CSS while creating a stunning replica of eBay's frontend. Dive into the world of eCommerce with this immersive project. Harness the power of Tailwind's utility-first approach to design and React's component-based architecture to craft a seamless user experience.
 
 
 **FEATURES:**
