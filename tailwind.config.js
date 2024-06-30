@@ -7,8 +7,12 @@ export default {
         body: ["Poppins", 'sans-serif'],
         heading: ["Ubuntu", 'sans-serif'],
         subHeading: ["Nunito", 'sans-serif'],
-        dancing: ["Dancing Script", 'cursive']
+        dancing: ["Dancing Script", 'cursive'],
+        'league-gothic': ['"League Gothic"', 'sans-serif'],
       }, 
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       colors: {
         bg_primary: "#F1F6F9",
         text_main: "#212A3E",
@@ -27,4 +31,5 @@ export default {
     fill: ['hover', 'focus'], 
   },
   plugins: [],
+  mode: 'jit',
 };

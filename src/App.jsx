@@ -6,7 +6,8 @@ import Featured from "./components/Featured";
 import Mens from "./components/mens";
 import Womens from "./components/womens";
 import Beauty from "./components/beauty";
-import Footer from "./components/footwear";
+import ShoeCarousel from "./components/footwear";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const App = () => {
         <Featured />
         <Mens />
         <Womens />
+        <ShoeCarousel />
         <Beauty />
         <Footer />
       </Router>
