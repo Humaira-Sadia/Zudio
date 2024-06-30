@@ -1,70 +1,18 @@
-/* Custom styles for ShoeCarousel */
-.shoe-carousel-container {
-    position: relative;
-  }
-  
-  .shoe-carousel-swiper {
-    height: 100%;
-  }
-  
-  .shoe-carousel-slide {
-    opacity: 0;
-    transition: opacity 300ms ease-in-out;
-  }
-  
-  .shoe-carousel-slide.swiper-slide-active {
-    opacity: 1 !important;
-  }
-  
-  .shoe-carousel-bullet {
-    width: 50px;
-    height: 5px;
-    background: #659cdf;
-    border-radius: 10px;
-    opacity: 1;
-  }
-  
-  .shoe-carousel-bullet-active {
-    background: yellow;
-  }
-  
-  .shoe-carousel-next,
-  .shoe-carousel-prev {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .shoe-carousel-next:hover,
-  .shoe-carousel-prev:hover {
-    color: white;
-  }
-/* Custom styles for Mens Swiper */
-/* .swiper-container.mySwiper {
-    position: relative;
-  }
-  
-  /* .mySwiper .swiper-slide {
-    opacity: 0;
-    transition: opacity 300ms ease-in-out;
-  } */
-  
-  .mySwiper .swiper-slide.swiper-slide-active {
-    opacity: 1 !important;
-  }
-  
-  .mySwiper .swiper-button-next,
-  .mySwiper .swiper-button-prev {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .mySwiper .swiper-button-next:hover,
-  .mySwiper .swiper-button-prev:hover {
-    color: white;
-  }
-  
-  .mySwiper .swiper-pagination {
-    bottom: 10px;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-  } 
-    
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+.category-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transition: all 0.3s ease;
+  rotate: 180deg;
+}
+
+.category-1:hover .category-text {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

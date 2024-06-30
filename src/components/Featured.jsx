@@ -1,89 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 const Featured = () => {
-  let isExpanded = false;
-    let expandedCategory = null;
+  const [expandedCategory, setExpandedCategory] = useState(null);
 
-    document.querySelectorAll(".category-1").forEach((category) => {
-        const text = category.querySelector(".category-text");
-        const image = category.querySelector(".category-image");
+  const categories = [
+    { id: 'men1', name: 'Men', image: 'src/images/men.avif', alignRight: false },
+    { id: 'women1', name: 'Women', image: 'src/images/women.avif', alignRight: true },
+    { id: 'footwear1', name: 'Footwear', image: 'src/images/beauty.avif', alignRight: false },
+    { id: 'beauty1', name: 'Beauty', image: 'src/images/footwear.avif', alignRight: true },
+  ];
 
-        category.addEventListener("click", () => {
-            if (isExpanded && expandedCategory === category) {
-                resetLayout();
-            } else {
-                expandCategory(category);
-            }
-        });
+  const handleCategoryClick = (categoryId) => {
+    setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
+  };
 
-        text.addEventListener("click", (e) => {
-            e.stopPropagation(); // Prevent triggering the category click event
-            const destination = document.getElementById("destination");
-            if (destination) {
-                destination.scrollIntoView({ behavior: "smooth" });
-            }
-        });
-    });
-
-    function expandCategory(category) {
-        resetLayout();
-        isExpanded = true;
-        expandedCategory = category;
-
-        document.querySelectorAll(".category-1").forEach((c) => {
-            if (c !== category) {
-                c.style.display = "none";
-            }
-        });
-
-        category.style.width = "calc(100% - 2rem)";
-        category.style.height = "calc(100% - 2rem)";
-
-        const image = category.querySelector(".category-image");
-        image.style.width = "95%";
+  const handleTextClick = (e) => {
+    e.stopPropagation();
+    const destination = document.getElementById("destination");
+    if (destination) {
+      destination.scrollIntoView({ behavior: "smooth" });
     }
+  };
 
-    function resetLayout() {
-        isExpanded = false;
-        expandedCategory = null;
-
-        document.querySelectorAll(".category-1").forEach((c) => {
-            c.style.display = "block";
-            c.style.width = "calc(50% - 1rem)";
-            c.style.height = "calc(50% - 1rem)";
-
-            const image = c.querySelector(".category-image");
-            image.style.width = "95%";
-        });
-    }
   return (
-    <div id="main-container" class="w-screen h-screen flex flex-wrap p-4">
-      <div id="men1" class="category-1 w-1/2 h-1/2 relative overflow-hidden cursor-pointer border border-gray-300 p-2">
-        <div class="category-text  absolute top-0 left-0 h-full w-[5%] bg-white flex items-center justify-center text-2xl font-bold z-10 ">
-          Men
+    <div id="main-container" className="w-screen h-screen flex flex-wrap p-4">
+      {categories.map((category) => (
+        <div
+          key={category.id}
+          id={category.id}
+          className={`category-1 relative overflow-hidden cursor-pointer border border-gray-300 p-2 ${
+            expandedCategory === category.id
+              ? 'w-full h-full'
+              : expandedCategory
+              ? 'hidden'
+              : 'w-1/2 h-1/2'
+          }`}
+          onClick={() => handleCategoryClick(category.id)}
+        >
+          <div
+            className={`category-text absolute top-0 ${
+              category.alignRight ? 'right-0' : 'left-0'
+            } h-full w-[5%] bg-white flex items-center justify-center text-2xl font-bold z-10`}
+            onClick={handleTextClick}
+          >
+            {category.name}
+          </div>
+          <img
+            src={category.image}
+            alt={`${category.name}'s Fashion`}
+            className={`category-image absolute top-0 ${
+              category.alignRight ? 'right-[5%]' : 'left-[5%]'
+            } w-[95%] h-full object-cover`}
+          />
         </div>
-        <img src="src\images\men.avif" alt="Men's Fashion" class="category-image absolute top-0 left-[5%] w-[95%] h-full object-cover"/>
-      </div>
-      <div id="women1" class="category-1 w-1/2 h-1/2 relative overflow-hidden cursor-pointer border border-gray-300 p-2">
-        <div class="category-text  absolute top-0 right-0 h-full w-[5%] bg-white flex items-center justify-center text-2xl font-bold z-10">
-          Women
-        </div>
-        <img src="src\images\women.avif" alt="Women's Fashion" class="category-image absolute top-0 right-[5%] w-[95%] h-full object-cover"/>
-      </div>
-      <div id="footwear1" class="category-1 w-1/2 h-1/2 relative overflow-hidden cursor-pointer border border-gray-300 p-2">
-        <div class="category-text absolute top-0 left-0 h-full w-[5%] bg-white flex items-center justify-center text-2xl font-bold z-10 ">
-          Footwear
-        </div>
-        <img src="src\images\beauty.avif" alt="Footwear" class="category-image absolute top-0 left-[5%] w-[95%] h-full object-cover"/>
-      </div>
-      <div id="beauty1" class="category-1 w-1/2 h-1/2 relative overflow-hidden cursor-pointer border border-gray-300 p-2">
-        <div class="category-text  absolute top-0 right-0 h-full w-[5%] bg-white flex items-center justify-center text-2xl font-bold z-10">
-          Beauty
-        </div>
-        <img src="src\images\footwear.avif" alt="Beauty Products" class="category-image absolute top-0 right-[5%] w-[95%] h-full object-cover"/>
-      </div>
+      ))}
     </div>
-      )
-}
+  );
+};
 
-      export default Featured
+export default Featured;
