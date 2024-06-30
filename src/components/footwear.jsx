@@ -12,7 +12,7 @@ const ShoeCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      image: "src/images/shoe1.png",
       alt: "Red Nike Shoe",
       category: "Sport Shoes",
       title: "NIKE D.01",
@@ -20,7 +20,7 @@ const ShoeCarousel = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa",
+      image: "src/images/shoe2.png",
       alt: "Blue Nike Shoe",
       category: "Sport Shoes",
       title: "NIKE D.02",
@@ -28,7 +28,7 @@ const ShoeCarousel = () => {
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+      image: "src/images/shoe3.png",
       alt: "White Nike Shoe",
       category: "Sport Shoes",
       title: "NIKE D.03",
