@@ -12,6 +12,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
+import banner from '../assets/banner_land.jpg'
+
 import { mens as slides } from "./constants";
 
 const Mens = () => {
@@ -20,7 +22,7 @@ const Mens = () => {
       <div className="banner w-full h-3/5">
         <h1 className="text-6xl p-3 font-bold mb-4 font-dancing">Mens Clothing</h1>
         <img
-          src="src/images/banner_land.jpg"
+          src={banner}
           alt="men collection banner"
           className="w-full h-full object-cover"
         />
@@ -71,7 +73,7 @@ const Mens = () => {
               className="text-center flex justify-center items-center bg-center bg-cover sm:w-[40rem] h-full sm:h-[25rem]"
             >
               <img
-                src={slide}
+                src={slide.img}
                 alt={`men image ${index + 1}`}
                 className="block w-full h-full object-cover"
               />

@@ -34,7 +34,7 @@ const Beauty = () => {
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index} className="flex items-center justify-center text-center text-lg">
                             <img
-                                src={slide}
+                                src={slide.img}
                                 alt={`Beauty Product ${index + 1}`}
                                 className="block w-full h-full object-contain"
                             />
