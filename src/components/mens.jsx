@@ -1,31 +1,28 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Autoplay,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+
+import banner from '../assets/banner_land.jpg'
+
+import { mens as slides } from "./constants";
 
 const Mens = () => {
-  const slides = [
-    "src/images/men1.avif",
-    "src/images/men2.avif",
-    "src/images/men3.avif",
-    "src/images/men4.avif",
-    "src/images/men5.avif",
-    "src/images/men6.avif",
-    "src/images/men7.avif",
-    "src/images/men8.avif",
-    "src/images/men9.avif",
-  ];
-
   return (
     <div className="men w-full h-fit flex flex-col text-center">
       <div className="banner w-full h-3/5">
-        <h1 className="text-2xl font-bold mb-4">Mens Clothing</h1>
+        <h1 className="text-6xl p-3 font-bold mb-4 font-dancing">Mens Clothing</h1>
         <img
-          src="src/images/banner_land.jpg"
+          src={banner}
           alt="men collection banner"
           className="w-full h-full object-cover"
         />
@@ -54,15 +51,29 @@ const Mens = () => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           className="mySwiper"
         >
           {slides.map((slide, index) => (
             <SwiperSlide
               key={index}
-              className="text-center flex justify-center items-center bg-center bg-cover w-[40rem] h-[25rem]"
+              className="text-center flex justify-center items-center bg-center bg-cover sm:w-[40rem] h-full sm:h-[25rem]"
             >
               <img
-                src={slide}
+                src={slide.img}
                 alt={`men image ${index + 1}`}
                 className="block w-full h-full object-cover"
               />
