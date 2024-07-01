@@ -25,7 +25,7 @@ const Mens = () => {
       <div className="banner w-full h-3/5">
         <h1 className="text-2xl font-bold mb-4">Mens Clothing</h1>
         <img
-          src="src/images/banner1.jpg"
+          src="src/images/banner_land.jpg"
           alt="men collection banner"
           className="w-full h-full object-cover"
         />

@@ -20,7 +20,7 @@ const Womens = () => {
     <div className="women w-full h-fit box-border bg-[white] shadow-[0px_4px_6px_rgba(0,0,0,0.1)] mt-5 p-5">
       <h1 className="text-2xl font-bold mb-4">Women's Clothing</h1>
       <div className="banner text-[white] w-full text-center mb-5 px-5 py-[60px]">
-        <img src="src/images/banner3.jpg" alt="" className="w-full h-full object-fill mb-5" />
+        <img src="src/images/banner.women.jpg" alt="" className="w-full h-full object-fill mb-5" />
       </div>
       <div className="clothing-container object-fill flex overflow-x-auto px-0 py-2.5">
         {slides.map((slide, index) => (
