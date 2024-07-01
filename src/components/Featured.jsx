@@ -1,23 +1,9 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-=======
 import React, { useState } from "react";
 import { categories } from "./constants";
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
 
 const Featured = () => {
   const [expandedCategory, setExpandedCategory] = useState(null);
 
-<<<<<<< HEAD
-  const categories = [
-    { id: 'men1', name: 'Men', image: 'src/images/men.avif', alignRight: false },
-    { id: 'women1', name: 'Women', image: 'src/images/women.avif', alignRight: true },
-    { id: 'footwear1', name: 'Footwear', image: 'src/images/beauty.avif', alignRight: false },
-    { id: 'beauty1', name: 'Beauty', image: 'src/images/footwear.avif', alignRight: true },
-  ];
-
-=======
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
   const handleCategoryClick = (categoryId) => {
     setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
   };
@@ -38,27 +24,16 @@ const Featured = () => {
           id={category.id}
           className={`category-1 relative overflow-hidden cursor-pointer border border-gray-300 p-2 ${
             expandedCategory === category.id
-<<<<<<< HEAD
-              ? 'w-full h-full'
-              : expandedCategory
-              ? 'hidden'
-              : 'w-1/2 h-1/2'
-=======
               ? "w-full h-full"
               : expandedCategory
               ? "hidden"
               : "w-1/2 h-1/2"
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
           }`}
           onClick={() => handleCategoryClick(category.id)}
         >
           <div
             className={`category-text absolute top-0 ${
-<<<<<<< HEAD
-              category.alignRight ? 'right-0' : 'left-0'
-=======
               category.alignRight ? "right-0" : "left-0"
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
             } h-full w-[5%] bg-white flex items-center justify-center text-2xl font-bold z-10`}
             onClick={handleTextClick}
           >
@@ -68,11 +43,7 @@ const Featured = () => {
             src={category.image}
             alt={`${category.name}'s Fashion`}
             className={`category-image absolute top-0 ${
-<<<<<<< HEAD
-              category.alignRight ? 'right-[5%]' : 'left-[5%]'
-=======
               category.alignRight ? "right-[5%]" : "left-[5%]"
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
             } w-[95%] h-full object-cover`}
           />
         </div>
@@ -81,8 +52,4 @@ const Featured = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Featured;
-=======
-export default Featured;
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d

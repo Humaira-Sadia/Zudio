@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "homepage": "https://Humaira-Sadia.github.io/Zudio",
-=======
   "homepage": "https://Humaira-Sadia.github.io/API-Alchemists-Reimagine-Round1",
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
   "name": "ecommerce",
   "private": false,
   "version": "0.0.0",
@@ -22,10 +18,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-three/drei": "^9.105.4",
     "@react-three/fiber": "^8.16.2",
-<<<<<<< HEAD
     "gh-pages": "^6.1.1",
-=======
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
@@ -41,12 +34,13 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-<<<<<<< HEAD
-=======
-    "gh-pages": "^6.1.1",
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "**Description:**\r **_ZUDIO_** is ticket to mastering React and Tailwind CSS while creating a stunning replica of eBay's frontend. Dive into the world of eCommerce with this immersive project. Harness the power of Tailwind's utility-first approach to design and React's component-based architecture to craft a seamless user experience.",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
