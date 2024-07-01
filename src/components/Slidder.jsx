@@ -24,11 +24,7 @@ const Slidder = ({ currentIndex }) => {
         disableOnInteraction: false,
       }}
       modules={[EffectFade, Autoplay]}
-<<<<<<< HEAD
-      className="swiper top-[55%] w-[60%] lg:w-[40%] left-[20%] lg:left-[28%] bg-[#eee2] rounded-2xl sm:block hidden"
-=======
       className="swiper top-[55%] w-[60%] lg:w-[40%] left-[20%] lg:left-[28%] rounded-2xl sm:block hidden"
->>>>>>> 9ef17346d3ec41bd3d0a598b78ab84df7e0ea91d
     >
       {banner.map((slide, index) => (
         <SwiperSlide
