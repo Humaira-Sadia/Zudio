@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Featured from "./components/Featured";
-import Mens from "./components/mens";
-import Womens from "./components/womens";
-import Beauty from "./components/beauty";
+import Mens from "./components/Mens";
+import Womens from "./components/Womens";
+import Beauty from "./components/Beauty";
 import ShoeCarousel from "./components/footwear";
 import Footer from "./components/Footer";
 const App = () => {
